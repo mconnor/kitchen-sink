@@ -4790,6 +4790,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^17.0.16":
+  version: 17.0.16
+  resolution: "@types/node@npm:17.0.16"
+  checksum: 2d452a9e0ee7ec83d447d66dd2baf4dd05ef2fbcda39b06f73d86b36d5150d86c43a733d534d77467e7782104756944d42a35ed4b64113bda341b8334ee4d01d
+  languageName: node
+  linkType: hard
+
 "@types/normalize-package-data@npm:^2.4.0":
   version: 2.4.0
   resolution: "@types/normalize-package-data@npm:2.4.0"
@@ -10271,6 +10278,7 @@ __metadata:
     "@react-native-community/masked-view": 0.1.10
     "@react-navigation/native": ^5.9.4
     "@react-navigation/stack": ^5.14.5
+    "@types/node": ^17.0.16
     "@types/react": ~17.0.21
     "@types/react-native": ~0.64.12
     "@typescript-eslint/eslint-plugin": ^5.10.1
@@ -10300,6 +10308,7 @@ __metadata:
     react-native-screens: ~3.10.1
     react-native-svg: 12.1.1
     react-native-unimodules: ~0.15.0
+    react-native-uuid: ^2.0.1
     react-native-web: 0.17.1
     react-test-renderer: ~16.13.1
     shelljs: ^0.8.4
@@ -12564,6 +12573,13 @@ __metadata:
     unimodules-app-loader: ~3.0.0
     unimodules-task-manager-interface: ~7.0.0
   checksum: dc80dec3832ebcefc160dd594af1d06901c78bc6178c797629140b38d9e92faf9f2beb7e0f1941e63a96eefd1ee5359c4c49bbcb5f511be713e8a168f6a06516
+  languageName: node
+  linkType: hard
+
+"react-native-uuid@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "react-native-uuid@npm:2.0.1"
+  checksum: 2fae6e2ee6cef108a31ae9d5be661a1947a86f4c6a812c7386b57d970861b364dc887bc4fe3225227aeea7925ccdc24d4478ff30193305abc283eb4a30ee2138
   languageName: node
   linkType: hard
 

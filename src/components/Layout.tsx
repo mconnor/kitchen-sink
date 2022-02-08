@@ -1,4 +1,4 @@
-import React from 'react';
+import {PropsWithChildren} from 'react';
 import {
 	Box,
 	useColorMode,
@@ -17,10 +17,22 @@ import {
 	Link,
 	ChevronLeftIcon,
 	IconButton,
+	IBoxProps, IHStackProps
 } from 'native-base';
+import { StackNavigationProp } from '@react-navigation/stack';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { EvilIcons } from '@expo/vector-icons';
 import { Floaters } from "./Floaters";
+
+type LayoutType = PropsWithChildren<{
+	navigation:StackNavigationProp<any>
+	title: string
+	doclink: string
+	navigateTo: string
+	_status?:any
+	_hStack?:IHStackProps
+
+}> & IBoxProps
 
 export const Layout = ({
 	children,
@@ -31,7 +43,7 @@ export const Layout = ({
 	_status,
 	_hStack,
 	...props
-}: any) => {
+}: LayoutType) => {
 	const { colorMode, toggleColorMode } = useColorMode();
 	const safeArea = useSafeAreaInsets();
 
@@ -81,7 +93,7 @@ export const Layout = ({
 								{/* <ChevronLeftIcon /> */}
 								<Pressable
 									onPress={() => {
-										navigation && navigation.navigate(navigateTo);
+										navigation.navigate(navigateTo);
 									}}
 									_web={{
 										cursor: 'pointer',
@@ -90,7 +102,7 @@ export const Layout = ({
 									{title && <ArrowBackIcon mx={2} />}
 								</Pressable>
 								<Heading
-									color={colorMode == 'dark' ? 'white' : 'gray.800'}
+									color={colorMode === 'dark' ? 'white' : 'gray.800'}
 									// fontSize={{
 									// 	lg: '3xl',
 									// }}

@@ -1,4 +1,4 @@
-import React from 'react';
+import uuid from 'react-native-uuid'
 import { ScrollView, StatusBar } from 'react-native';
 import {
 	Heading,
@@ -58,6 +58,7 @@ export function Examples({
 				>
 					{component.components.map((element: any, index: number) => (
 						<Box
+						key={uuid.v4()}
 							shadow={1}
 							bg={useColorModeValue('white', 'blueGray.700')}
 							my={2}
@@ -68,12 +69,12 @@ export function Examples({
 								<Heading
 									size="md"
 									p={4}
-									color={colorMode == 'dark' ? 'gray.100' : 'trueGray.700'}
+									color={colorMode === 'dark' ? 'gray.100' : 'trueGray.700'}
 								>
 									{element.title}
 								</Heading>
 								<Divider
-									bg={colorMode == 'dark' ? 'blueGray.500' : 'warmGray.200'}
+									bg={colorMode === 'dark' ? 'blueGray.500' : 'warmGray.200'}
 								/>
 								<Flex
 									nativeID="1111"

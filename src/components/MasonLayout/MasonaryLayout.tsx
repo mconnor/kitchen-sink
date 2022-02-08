@@ -1,5 +1,20 @@
-import { HStack, VStack } from 'native-base';
-import React from 'react';
+import { HStack, VStack, IVStackProps, IHStackProps} from 'native-base';
+import { ReactChildren , cloneElement} from 'react';
+import { StackNavigationProp } from '@react-navigation/stack';
+import uuid from 'react-native-uuid'
+type MasonaryLayoutType = {
+	navigation:StackNavigationProp<any>
+	title: string
+	doclink: string
+	navigateTo: string
+	_status:any
+	_hStack:IHStackProps
+	_vStack:IVStackProps
+	column: unknown[]
+	children: ReactChildren
+
+}
+
 
 export const MasonaryLayout = ({
 	column,
@@ -7,28 +22,27 @@ export const MasonaryLayout = ({
 	_vStack,
 	children,
 	...props
-}) => {
+}: MasonaryLayoutType) => {
 	const vStackChildren = [];
-	const childrenLength = children.length;
-	const columnLength = column.length;
-	React.Children.map(children, (child, cIndex) => {
-		const pos = cIndex % columnLength;
+
+	children.map(children, (child, cIndex) => {
+		const pos = cIndex %  column.length;
 		if (!vStackChildren[pos]) vStackChildren[pos] = [];
 		// if (childrenLength - cIndex <= columnLength) {
-		// 	vStackChildren[pos].push(React.cloneElement(child, { flex: 1 }));
+		// 	vStackChildren[pos].push(cloneElement(child, { flex: 1 }));
 		// } else {
 		vStackChildren[pos].push(child);
 		// }
-	});
+	})
 
 	const vstackTemplate = () => column.map((flexVal, index) => {
 			vStackChildren[index][vStackChildren[index].length - 1] =
-				React.cloneElement(
+				cloneElement(
 					vStackChildren[index][vStackChildren[index].length - 1],
 					{ flex: 1 },
 				);
 			return (
-				<VStack {..._vStack} flex={flexVal}>
+				<VStack key={uuid.v4()} {..._vStack} flex={flexVal}>
 					{vStackChildren[index]}
 				</VStack>
 			);
