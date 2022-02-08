@@ -21,8 +21,7 @@ export const MasonaryLayout = ({
 		// }
 	});
 
-	const vstackTemplate = () => {
-		return column.map((flexVal, index) => {
+	const vstackTemplate = () => column.map((flexVal, index) => {
 			vStackChildren[index][vStackChildren[index].length - 1] =
 				React.cloneElement(
 					vStackChildren[index][vStackChildren[index].length - 1],
@@ -34,7 +33,6 @@ export const MasonaryLayout = ({
 				</VStack>
 			);
 		});
-	};
 
 	return <HStack {..._hStack}>{vstackTemplate()}</HStack>;
 };

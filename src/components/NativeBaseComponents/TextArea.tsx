@@ -1,8 +1,7 @@
 import React from 'react';
 import { TextArea, VStack, Box } from 'native-base';
 
-export const Example = () => {
-	return (
+export const Example = () => (
 		<VStack justifyContent="center" w="80%">
 			<Box position="absolute" w="100%">
 				<Box
@@ -44,4 +43,3 @@ export const Example = () => {
 			{/* <Box w="100%" h={20} bg="red.200" zIndex={-1}></Box> */}
 		</VStack>
 	);
-};

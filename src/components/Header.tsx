@@ -30,7 +30,7 @@ export function Header({
 					_pressed={{ bg: 'transparent' }}
 					colorScheme="coolGray"
 					onPress={() => navigation.navigate('masonlayout')}
-				></IconButton>
+				 />
 
 				{/* <Heading
 					alignSelf="center"

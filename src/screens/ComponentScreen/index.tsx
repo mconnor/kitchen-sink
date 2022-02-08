@@ -1,6 +1,5 @@
 import React from 'react';
 import { ScrollView, StatusBar } from 'react-native';
-import { Header } from '../../components/Header';
 import {
 	Heading,
 	VStack,
@@ -13,8 +12,9 @@ import {
 	Icon,
 	useBreakpointValue,
 } from 'native-base';
-import { mapping } from '../../config/map';
 import { StackNavigationProp } from '@react-navigation/stack';
+import { Header } from '../../components/Header';
+import { mapping } from '../../config/map';
 import { Layout } from '../../components/Layout';
 
 export function Examples({
@@ -24,8 +24,8 @@ export function Examples({
 	route: any;
 	navigation: StackNavigationProp<any>;
 }) {
-	let name: string = route.params.name;
-	//@ts-ignore
+	const {name} = route.params;
+	// @ts-ignore
 	const component = mapping[name];
 	const { colorMode, toggleColorMode } = useColorMode();
 	return (

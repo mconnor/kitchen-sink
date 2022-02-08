@@ -1,8 +1,7 @@
 import React from 'react';
 import { Tabs } from 'native-base';
 
-export const Example = () => {
-	return (
+export const Example = () => (
 		<></>
 		// <Tabs mt={4} shadow={6} bg="black">
 		//   <Tabs.Bar>
@@ -15,4 +14,3 @@ export const Example = () => {
 		//   </Tabs.Views>
 		// </Tabs>
 	);
-};

@@ -14,6 +14,6 @@ export function Example() {
       }}
       w={{ base:'80%', lg:'60%'}}
       h={10}
-    ></Pressable>
+     />
   );
 }

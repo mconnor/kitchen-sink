@@ -1,4 +1,4 @@
-//@ts-nocheck
+// @ts-nocheck
 import React from 'react';
 import { Stack, Box } from 'native-base';
 import { VStack } from '../../nb/NativeBase/src';

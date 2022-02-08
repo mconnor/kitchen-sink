@@ -2,8 +2,7 @@ import React from 'react';
 import { Button, Box } from 'native-base';
 import { borderColor } from 'styled-system';
 
-export const Example = () => {
-	return (
+export const Example = () => (
 		<Box
 			p={4}
 			rounded="lg"
@@ -44,4 +43,3 @@ export const Example = () => {
 			/>
 		</Box>
 	);
-};

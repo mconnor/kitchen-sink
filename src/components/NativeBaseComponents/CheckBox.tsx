@@ -1,8 +1,7 @@
 import React from 'react';
 import { Box, Checkbox } from 'native-base';
 
-export const Example = () => {
-	return (
+export const Example = () => (
 		<Box
 			p={4}
 			rounded="full"
@@ -14,7 +13,6 @@ export const Example = () => {
 			}}
 			opacity={0.5}
 		>
-			<Checkbox value="" isChecked={true} colorScheme="red" />
+			<Checkbox value="" isChecked colorScheme="red" />
 		</Box>
 	);
-};

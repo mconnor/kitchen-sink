@@ -2,8 +2,7 @@ import React from 'react';
 import { Input, VStack, Box, Checkbox, CheckIcon } from 'native-base';
 
 
-export const Example = () => {
-  return (
+export const Example = () => (
     <Box 
       // justifyContent="center"
       w={{ base: "80%", lg: "50%" }}
@@ -128,4 +127,3 @@ export const Example = () => {
   </VStack>
     </Box>
   );
-};

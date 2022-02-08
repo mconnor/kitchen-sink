@@ -29,7 +29,7 @@ export const Example = () => {
           my={1}
           _light={{ bg: 'lightBlue.400' }}
           _dark={{ bg: 'blue.200' }}
-        ></Box>
+         />
       )}
       keyExtractor={(item) => item.id}
     />

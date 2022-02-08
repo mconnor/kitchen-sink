@@ -15,14 +15,14 @@ import {
 	Stagger,
 	IconButton,
 } from 'native-base';
-import { mapping } from '../../config/map';
 import { Dimensions, ScrollView, StatusBar } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { mapping } from '../../config/map';
 import { MasonaryLayout } from '../../components/MasonLayout/MasonaryLayout';
 import { MasonMobile } from '../../components/MasonLayout/mobile';
 import { MasonWeb } from '../../components/MasonLayout/web';
 import { Logo } from '../../components/Logo';
 import { StoryBook } from '../../components/StoryBook';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Layout } from '../../components/Layout';
 
 export function MasonLayout({

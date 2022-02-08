@@ -1,8 +1,7 @@
 import React from 'react';
 import { Box, Radio } from 'native-base';
 
-export const Example = () => {
-	return (
+export const Example = () => (
 		<Box
 			p={4}
 			rounded="full"
@@ -19,4 +18,3 @@ export const Example = () => {
 			</Radio.Group>
 		</Box>
 	);
-};

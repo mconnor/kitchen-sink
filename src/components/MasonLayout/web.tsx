@@ -216,7 +216,7 @@ export const MasonWeb = ({
 					navigation={navigation}
 					name="Tooltip"
 					// colors={['blue.400', 'pink.400']}
-				/>*/}
+				/> */}
 			</VStack>
 			<VStack flex={1} space={4}>
 				<StoryBook
@@ -303,7 +303,7 @@ export const MasonWeb = ({
 					navigation={navigation}
 					name="Tooltip"
 					// colors={['blue.400', 'pink.400']}
-				/>*/}
+				/> */}
 			</VStack>
 		</HStack>
 	);

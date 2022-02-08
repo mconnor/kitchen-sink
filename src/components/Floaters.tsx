@@ -25,7 +25,7 @@ export const Floaters = () => {
 			<StatusBar
 				style={colorMode === 'dark' ? 'light' : 'dark'}
 				backgroundColor={colorMode == 'dark' ? '#27272a' : '#f3f2f2'}
-				translucent={true}
+				translucent
 			/>
 			<Fab
 				shadow={7}

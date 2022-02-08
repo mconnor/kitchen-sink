@@ -1,8 +1,7 @@
 import React from 'react';
 import { Column, Box } from 'native-base';
 
-export const Example = () => {
-  return (
+export const Example = () => (
     <Column mt={6} shadow={6}>
       <Box w={100} h={10} 
         _light={{
@@ -23,4 +22,3 @@ export const Example = () => {
       <Box w={100} h={10} bg="rose.500" />
     </Column>
   );
-};

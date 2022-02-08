@@ -1,8 +1,7 @@
 import React from 'react';
 import { Box } from 'native-base';
 
-export const Example = () => {
-	return (
+export const Example = () => (
 		<Box
 			border={1}
 			borderColor="transparent"
@@ -28,4 +27,3 @@ export const Example = () => {
 			/>
 		</Box>
 	);
-};

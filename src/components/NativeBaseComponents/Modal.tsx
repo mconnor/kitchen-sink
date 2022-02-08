@@ -1,8 +1,7 @@
 import React from 'react';
 import { Box, HStack, VStack, Divider } from 'native-base';
 
-export const Example = () => {
-	return (
+export const Example = () => (
 		<VStack
 			w="70%"
 			rounded="md"
@@ -115,4 +114,3 @@ export const Example = () => {
 			</Box>
 		</VStack>
 	);
-};

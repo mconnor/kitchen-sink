@@ -1,8 +1,7 @@
 import React from 'react';
 import { CircularProgress } from 'native-base';
 
-export const Example = () => {
-	return (
+export const Example = () => (
 		<CircularProgress
 			size={12}
 			value={33}
@@ -13,4 +12,3 @@ export const Example = () => {
 			}}
 		/>
 	);
-};

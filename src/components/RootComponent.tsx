@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { Box, useColorModeValue, useToken } from 'native-base';
-import { RootStack } from '../../src/navigators/rootNavigator';
+import { RootStack } from "../navigators/rootNavigator";
 
 export const Root = () => {
 	const [lightBg, darkBg] = useToken(

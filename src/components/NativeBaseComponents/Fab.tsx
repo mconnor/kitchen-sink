@@ -1,8 +1,7 @@
 import React from 'react';
 import { Box, AddIcon } from 'native-base';
 
-export const Example = () => {
-	return (
+export const Example = () => (
 		<Box
 			rounded="full"
 			_light={{
@@ -25,4 +24,3 @@ export const Example = () => {
 			/>
 		</Box>
 	);
-};

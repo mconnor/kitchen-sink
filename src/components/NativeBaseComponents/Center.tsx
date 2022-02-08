@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Center } from 'native-base';
+
 export function Example() {
 	return (
 		<Center

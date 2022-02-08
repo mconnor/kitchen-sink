@@ -18,9 +18,9 @@ import {
 	ChevronLeftIcon,
 	IconButton,
 } from 'native-base';
-import { Floaters } from '../components/Floaters';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { EvilIcons } from '@expo/vector-icons';
+import { Floaters } from "./Floaters";
 
 export const Layout = ({
 	children,
@@ -97,7 +97,7 @@ export const Layout = ({
 									_web={{ py: 2 }}
 									isTruncated
 								>
-									{title ? title : 'NativeBase'}
+									{title || 'NativeBase'}
 								</Heading>
 							{/* </HStack> */}
 							{/* <Text color={colorMode == 'dark' ? 'white' : 'gray.800'}>v3</Text> */}

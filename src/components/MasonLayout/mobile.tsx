@@ -272,7 +272,7 @@ export const MasonMobile = ({
 					navigation={navigation}
 					name="Tooltip"
 					// colors={['blue.400', 'pink.400']}
-				/>*/}
+				/> */}
 			</VStack>
 		</HStack>
 	);

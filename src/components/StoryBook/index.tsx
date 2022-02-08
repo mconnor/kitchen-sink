@@ -15,7 +15,7 @@ export function StoryBook({
 	_heading,
 	...props
 }: any) {
-	const Example = mapping[name].basic.Example;
+	const {Example} = mapping[name].basic;
 	const gradColors = useColorModeValue(lightGrad, darkGrad) || [
 		'gray.700',
 		'white',
@@ -37,7 +37,7 @@ export function StoryBook({
 				flex={1}
 				onPress={() =>
 					navigation.navigate('Component | NativeBase', {
-						name: name,
+						name,
 					})
 				}
 				// minH={32}

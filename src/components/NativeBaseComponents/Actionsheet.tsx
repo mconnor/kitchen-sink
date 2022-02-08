@@ -1,8 +1,7 @@
 import React from 'react';
 import { Alert, Divider, VStack, Skeleton, Box } from 'native-base';
 
-export const Example = () => {
-	return (
+export const Example = () => (
 		<Box flex={1} w="100%" justifyContent="flex-end">
 			<VStack
 				_light={{
@@ -77,4 +76,3 @@ export const Example = () => {
 			</VStack>
 		</Box>
 	);
-};

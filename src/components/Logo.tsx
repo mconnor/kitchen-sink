@@ -2,6 +2,7 @@ import 'react-native-gesture-handler';
 import React from 'react';
 import { Icon, IIconProps } from 'native-base';
 import { Path, G } from 'react-native-svg';
+
 export function Logo(props: IIconProps) {
 	return (
 		<Icon viewBox="0 0 602.339 681.729" {...props}>

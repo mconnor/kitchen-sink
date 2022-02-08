@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from 'native-base';
-export const Example = () => {
-  return (
+
+export const Example = () => (
     <Box
       size={12}
       w="80%"
@@ -14,4 +14,3 @@ export const Example = () => {
       }}
     />
   );
-};

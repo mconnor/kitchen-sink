@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, HStack, Center } from 'native-base';
-export const Example = () => {
-	return (
+
+export const Example = () => (
 		<Center ml={4} w="80%">
 			<HStack>
 				<Box
@@ -55,4 +55,3 @@ export const Example = () => {
 			</HStack>
 		</Center>
 	);
-};

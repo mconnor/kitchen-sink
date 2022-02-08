@@ -1,7 +1,7 @@
 import React from 'react';
 import { ScrollView, VStack, Center, Box } from 'native-base';
-export const Example = () => {
-  return (
+
+export const Example = () => (
     <Box
       _light={{
         bg: 'pink.100',
@@ -21,8 +21,7 @@ export const Example = () => {
           top={2}
           bg="gray.200"
           borderRadius={4}
-        ></Box>
+         />
       </Box>
     </Box>
   );
-};

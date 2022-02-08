@@ -1,8 +1,7 @@
 import React from 'react';
 import { Slider, Box } from 'native-base';
 
-export const Example = () => {
-	return (
+export const Example = () => (
 		<Slider defaultValue={70} colorScheme="fuchsia" w="80%">
 			<Slider.Track>
 				<Slider.FilledTrack />
@@ -10,4 +9,3 @@ export const Example = () => {
 			<Slider.Thumb />
 		</Slider>
 	);
-};

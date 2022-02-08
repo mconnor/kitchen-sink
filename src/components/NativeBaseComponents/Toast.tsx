@@ -1,8 +1,7 @@
 import React from 'react';
 import { Alert, HStack, VStack, Center, Box } from 'native-base';
 
-export const Example = () => {
-	return (
+export const Example = () => (
 		<VStack alignItems="center" w="80%">
 			<HStack
 				space={3}
@@ -161,4 +160,3 @@ export const Example = () => {
 			</HStack>
 		</VStack>
 	);
-};

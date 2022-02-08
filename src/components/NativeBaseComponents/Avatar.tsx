@@ -1,8 +1,7 @@
 import React from 'react';
 import { Avatar, Box } from 'native-base';
 
-export const Example = () => {
-	return (
+export const Example = () => (
 		<Avatar
 			size="lg"
 			_light={{ bg: 'blue.300' }}
@@ -20,4 +19,3 @@ export const Example = () => {
 			/>
 		</Avatar>
 	);
-};

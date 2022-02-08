@@ -2,8 +2,7 @@ import React from 'react';
 import { Icon, MoonIcon, Stack } from 'native-base';
 import { G, Path } from 'react-native-svg';
 
-export const Example = () => {
-	return (
+export const Example = () => (
 		<Icon viewBox="0 0 870 873">
 			<G fillRule="nonzero" stroke="none" strokeWidth={1} fill="none">
 				<Path
@@ -13,4 +12,3 @@ export const Example = () => {
 			</G>
 		</Icon>
 	);
-};

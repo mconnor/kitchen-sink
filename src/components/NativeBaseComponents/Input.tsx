@@ -1,8 +1,7 @@
 import React from 'react';
 import { Input, VStack, Box } from 'native-base';
 
-export const Example = () => {
-	return (
+export const Example = () => (
 		<VStack justifyContent="center" w="80%">
 			<Input aria-label="input" size="xs" isDisabled />
 			<Box
@@ -20,4 +19,3 @@ export const Example = () => {
 			/>
 		</VStack>
 	);
-};
