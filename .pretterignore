@@ -92,5 +92,5 @@ src/nb
 .pnp.*
 .yarn/*
 
-.built-init.js
+built-init.js
 
