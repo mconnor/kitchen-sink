@@ -1,0 +1,10 @@
+{
+    "cSpell.words": [
+        "Actionsheet",
+        "doclink",
+        "Entypo",
+        "Ionicons",
+        "unimodules"
+    ],
+    "typescript.tsdk": "node_modules/typescript/lib"
+}

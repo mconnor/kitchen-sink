@@ -1,10 +1,13 @@
+/* eslint-disable global-require */
 // import {} from '../components/NativeBaseComponents/Alert';
+import {Component } from 'react'
+
 const baseUrl = '../nb/components';
 
 type mapping = {
 	title: string;
 	description: string;
-	basic: React.Component;
+	basic: Component;
 	components: {
 		component: any;
 		title: string;

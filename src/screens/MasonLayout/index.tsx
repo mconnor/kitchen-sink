@@ -1,4 +1,4 @@
-import React from 'react';
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { StackNavigationProp } from '@react-navigation/stack';
 import {
 	Box,
